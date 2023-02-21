@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNG-GAMES</title>
+    <link rel="icon" href="/Assignment/images/logo.png">
+    <link rel="stylesheet" href="/Assignment/CSS/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+  
+  <!--thanh slides-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/Assignment/images/1.png" width="100%">
+      <div class="text">
+       <h2> VÕ LÂM NHÀN HIỆP</h2>Võ Lâm Nhàn Hiệp VNG – Game đấu tướng Võ Lâm ngũ hành tương sinh tương khắc. Được phát triển bởi
+         KingSoft- cha đẻ của các tựa game võ lâm đình đám và chính thức phát hành bởi VNGGames ở thị trường Việt Nam!</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Assignment/images/2.png"  width="100%">
+      <div class="text"><h2>PLAY TOGETHER</h2>Play Together VNG là tựa game nhập vai mô phỏng thế giới mở giúp mọi kết nối và đến gần
+         nhau hơn. Tham gia game để cùng câu cá, bắt bọ và các minigame thử thách hấp dẫn.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Assignment/images/3.jpg"  width="100%">
+      <div class="text"><h2>THIÊN LONG BÁT BỘ 2</h2>
+        Thiên Long Bát Bộ 2 VNG là tựa game kế thừa và phát huy những tinh hoa của dòng game Thiên Long Bát Bộ. 
+        Khinh Công Chiến Đấu mới lạ, 
+        phá bỏ giới hạn không gian cùng hệ thống bày sạp buôn bán đa dạng tạo nên một thế giới của sự tự do và hoàn mỹ.
+      </div>
+        
+    </div>
+    <div class="mySlides fade">
+      <img src="/Assignment/images/4.png"  width="100%">
+      <div class="text"><h2>TÂN NGỌA LONG</h2>
+        Tượng đài game chiến thuật kinh điển tái xuất, với đồ họa và gameplay được kế thừa và nâng 
+        cấp từ tựa game Ngọa Long kinh điển một thời, mang đến cho người chơi một trải nghiệm quen thuộc nhưng đầy 
+        tính mới mẻ, độc đáo từ Công Thành Chiến, Binh Chủng...       
+      </div>
+        
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/Assignment/images/5.png"  width="100%">
+      <div class="text"><h2>ĐẤU LA VNG</h2>
+      Game đấu tướng chiến thuật dựa trên nguyên tác tiểu thuyết Đấu La Đại Lục, 
+      nơi các Hồn Sư thu thập Võ Hồn từ việc Săn bắt Hồn Thú, kết hợp Hồn Hoàn, 
+      kích hoạt Hồn Kỹ,…. cùng với đồ họa 3D, phong cách anime vô cùng đặc sắc. 											
+      </div>
+        
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <!--thanh công cụ-->
+    <header>
+      
+        <nav class="menu">
+            <ul>
+              <li><a href="home.html"><img src="/Assignment/images/logo.png" alt="logo" width="50px"></a></li>
+                <li><a href="home.html" title="Trang chủ">Trang chủ</a></li>
+                <li><a href="#" title="Tin Tức">Tin tức</a>
+                        <ul>
+                            <li><a href="#" title="TTG">Thông tin game</a>
+                                <ul>
+                                  <li><a href="./menucon/gamemb.html" title="Mobile">Game mobile</a>
+                                  <li><a href="#" title="PC">Game PC</a>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="TTGĐ">Thông tin giải đấu</a>
+                                <ul>
+                                  <li><a href="./menucon/LoL.html" title="LOL">Liên Minh Huyền Thoại</a>
+                                  <li><a href="#" title="LQ">Liên Quân</a>
+                                  <li><a href="#" title="TC">Liên Minh: Tốc Chiến</a>
+                                  <li><a href="#" title="PUBG">PUBG</a>
+                                  <li><a href="#" title="more">Xem Thêm</a>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="/Assignment/lienhe.html" title="liên hệ">Liên hệ</a></li>
+                <li><a href="hoi&dap.html" title="Liện hệ">Hỏi & đáp</a></li>
+                <li><a href="hoi&dap.html" title="Liện hệ">Tài Khoản</a>
+                  <ul>
+                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="#">Đăng kí</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1 class="text2">Vị trí</h1>
+      <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4720.796416260918!2d106.62672841119317!3d10.853905741639636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529b6a2b351a5%3A0x11690ada8c36f9bc!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIFRo4buxYyBow6BuaCBGUFQgUG9seXRlY2huaWMgVFAuSENNIChDUzMp!5e0!3m2!1svi!2s!4v1676537663878!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </main>
+    <Footer>
+      <ul>
+            <h6>Esport Game<br>
+            SĐT:0366xxxxxx<br>
+            Mail: hoangltps31281@fpt.edu.vn<br></h6>
+       </ul>
+    </Footer>
+</body>
+</html>

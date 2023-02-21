@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNG-GAMES</title>
+    <link rel="icon" href="/Assignment/images/logo.png">
+    <link rel="stylesheet" href="/Assignment/CSS/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+  
+  <!--thanh slides-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/Assignment/images/1.png" width="100%">
+      <div class="text">
+       <h2> VÕ LÂM NHÀN HIỆP</h2>Võ Lâm Nhàn Hiệp VNG – Game đấu tướng Võ Lâm ngũ hành tương sinh tương khắc. Được phát triển bởi
+         KingSoft- cha đẻ của các tựa game võ lâm đình đám và chính thức phát hành bởi VNGGames ở thị trường Việt Nam!</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Assignment/images/2.png"  width="100%">
+      <div class="text"><h2>PLAY TOGETHER</h2>Play Together VNG là tựa game nhập vai mô phỏng thế giới mở giúp mọi kết nối và đến gần
+         nhau hơn. Tham gia game để cùng câu cá, bắt bọ và các minigame thử thách hấp dẫn.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Assignment/images/3.jpg"  width="100%">
+      <div class="text"><h2>THIÊN LONG BÁT BỘ 2</h2>
+        Thiên Long Bát Bộ 2 VNG là tựa game kế thừa và phát huy những tinh hoa của dòng game Thiên Long Bát Bộ. 
+        Khinh Công Chiến Đấu mới lạ, 
+        phá bỏ giới hạn không gian cùng hệ thống bày sạp buôn bán đa dạng tạo nên một thế giới của sự tự do và hoàn mỹ.
+      </div>
+        
+    </div>
+    <div class="mySlides fade">
+      <img src="/Assignment/images/4.png"  width="100%">
+      <div class="text"><h2>TÂN NGỌA LONG</h2>
+        Tượng đài game chiến thuật kinh điển tái xuất, với đồ họa và gameplay được kế thừa và nâng 
+        cấp từ tựa game Ngọa Long kinh điển một thời, mang đến cho người chơi một trải nghiệm quen thuộc nhưng đầy 
+        tính mới mẻ, độc đáo từ Công Thành Chiến, Binh Chủng...       
+      </div>
+        
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/Assignment/images/5.png"  width="100%">
+      <div class="text"><h2>ĐẤU LA VNG</h2>
+      Game đấu tướng chiến thuật dựa trên nguyên tác tiểu thuyết Đấu La Đại Lục, 
+      nơi các Hồn Sư thu thập Võ Hồn từ việc Săn bắt Hồn Thú, kết hợp Hồn Hoàn, 
+      kích hoạt Hồn Kỹ,…. cùng với đồ họa 3D, phong cách anime vô cùng đặc sắc. 											
+      </div>
+        
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <!--thanh công cụ-->
+    <header>
+      
+        <nav class="menu">
+            <ul>
+              <li><a href="home.html"><img src="/Assignment/images/logo.png" alt="logo" width="50px"></a></li>
+                <li><a href="home.html" title="Trang chủ">Trang chủ</a></li>
+                <li><a href="#" title="Tin Tức">Tin tức</a>
+                        <ul>
+                            <li><a href="#" title="TTG">Thông tin game</a>
+                                <ul>
+                                  <li><a href="./menucon/gamemb.html" title="Mobile">Game mobile</a>
+                                  <li><a href="#" title="PC">Game PC</a>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="TTGĐ">Thông tin giải đấu</a>
+                                <ul>
+                                  <li><a href="./menucon/LoL.html" title="LOL">Liên Minh Huyền Thoại</a>
+                                  <li><a href="#" title="LQ">Liên Quân</a>
+                                  <li><a href="#" title="TC">Liên Minh: Tốc Chiến</a>
+                                  <li><a href="#" title="PUBG">PUBG</a>
+                                  <li><a href="#" title="more">Xem Thêm</a>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="/Assignment/lienhe.html" title="liên hệ">Liên hệ</a></li>
+                <li><a href="hoi&dap.html" title="Liện hệ">Hỏi & đáp</a></li>
+                <li><a href="hoi&dap.html" title="Liện hệ">Tài Khoản</a>
+                  <ul>
+                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="#">Đăng kí</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1 class="text2">Game Mobile</h1>
+        <div class="row">
+          <div class="content">
+              <div class="title">
+                <h2 class="h2">Đăng nhập 7 ngày có ngay dàn tướng 5 sao cùng Tam Quốc Chess.</h2>
+              </div>
+              <div class="content-body">
+                <div class="textchitiet">
+                  <p>Tựa game đấu tướng Tam Quốc hấp dẫn Tam Quốc Chess sẽ chính thức ra mắt vào ngày 16/2 tới đây. Với lối chơi chiến 
+                   <br> thuật sâu cùng đa dạng tộc hệ, đây hứa hẹn sẽ là sân chơi mới cho cộng đồng game thủ Việt tìm về khám phá.</p>
+                   <br>
+                   <p>Tải game ngay:<a href="https://tqchess.onelink.me/RCHt/PR">https://tqchess.onelink.me/RCHt/PR</a></p> <br><br>  
+                        <img src="./images/chitiet.1.png" alt=""> <br><br>
+                    <p>Người chơi sẽ hiệu triệu cho mình những vị tướng mạnh mẽ nhất, tính toán linh hoạt đội hình trong những chiến trường đa dạng, giành lấy chiến thắng. Am hiểu tướng, <br>
+                     hiểu rõ đặc điểm các tộc hệ và đặc biệt là có được những đối pháp hợp lý trước đội hình sát thủ sẽ là điều mấu chốt giúp game thủ có được lợi thế.</p> <br>
+                        <img src="./images/chitiet.1.1.png" alt=""> <br><br>
+                    <p>Tiếp đến, thông qua quá trình vượt ải và làm nhiệm vụ, người chơi sẽ liên tục nhận thưởng vé quay lên tới 100 vé mỗi ngày, tha hồi chiêu mộ tướng. 
+                       <br> Được biết, tỉ lệ quay tướng trong Tam Quốc Chess cũng tương đối dễ thở, game thủ có thể quay ra tướng xịn phẩm cao chỉ bằng nhân phẩm mà thôi.</p><br>
+                       <img src="./images/chitiet.1.2.png" alt=""> <br><br>
+                    <p>Trong 1 tuần đầu, mỗi ngày đăng nhập sẽ đều là 1 ngày nhận quà to: Tướng 5 sao ngẫu nhiên, Thần Tướng Lệnh, 388 KNB, quà Trang Bị Lưu Kim 4 món, 
+                    <br>tặng Hoa Đà, tặng Bảo Vật Truyền Thuyết. 
+                    Ngoài ra, vượt ải đạt mốc cũng đều được thưởng hậu hĩnh.</p><br>
+                        <img src="./images/chitiet.1.3.png" alt=""> <br><br>
+                    <p>Dù sở hữu lối chơi chiến thuật đấu tướng sâu sắc đề cao tính toán nhưng Tam Quốc Chess cũng tích hợp cơ chế rảnh tay nhận quà. Với thời gian tích lũy lên tới 12 tiếng, 
+                       <br>game thủ có thể nhận lại vô vàn nguyên liệu 1 cách đủ đầy và liên tục. 
+                        Sẽ luôn có cách để bạn tìm lại tài nguyên, không bị thụt lùi so với đối thủ dù thời gian chơi game không cần quá nhiều.</p><br>
+                        <img src="./images/chitiet.1.4.png" alt=""> <br><br>
+                    <p>Tam Quốc Chess cho phép game thủ đầu tư 1 lần nhận quà nhiều ngày, với các phần thưởng rất có lợi cho việc tăng cường chiến lực như: Quan Vũ 5 sao, Vũ Khí Tím Chu Tước Chiến Kích, Áo Giáp Tím Phạn Thiên Giáp...
+                    Điều này đương nhiên sẽ giúp các game thủ sớm có 1 xuất phát điểm hơn người.</p><br>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout&action&size&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div class="fb-comments" data-href="https://www.facebook.com/fpolyfootball" data-width="100%" data-numposts="10"></div>
+                <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="RTJFBaMU"></script>
+
+      </main>
+    <Footer>
+      <ul>
+        <h6>Esport Game<br>
+          SĐT:0366xxxxxx<br>
+          Mail: hoangltps31281@fpt.edu.vn<br></h6>
+       </ul>
+    </Footer>
+</body>
+</html>
